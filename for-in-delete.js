@@ -39,10 +39,10 @@ for(var key in values) {
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
-function showValues(values) {
+function showValues(obj) {
   let newStr = '';
-  for(let key in values){
-    newStr = `${newStr}${values[key]}`
+  for(let key in obj){
+    newStr = `${newStr}${obj[key]}`
   } return newStr;
 }
 

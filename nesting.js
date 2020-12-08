@@ -50,7 +50,8 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater(){
+}
 
 
 
@@ -68,7 +69,16 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-//Code Here
+const removeDuplicates = () => {
+  for(let i = 0; i < workplaceAccidents.length; i++){
+    for(let j = i + 1; j < workplaceAccidents.length; j++){
+      if(workplaceAccidents[i] === workplaceAccidents[j]){
+        workplaceAccidents.splice(j, 1)
+        j--
+      }
+    }
+  } return workplaceAccidents;
+}
 
 
 
@@ -96,7 +106,8 @@ var cat = {
     2. Assign fluffy2ndFriend the name of Fluffy's 2nd friend.
 */
 
-//Code Here
+grumpyActivity = cat.catFriends[0].activities[1];
+fluffy2ndFriend = cat.catFriends[1].name;
 var grumpyActivity;
 var fluffy2ndFriend;
 
